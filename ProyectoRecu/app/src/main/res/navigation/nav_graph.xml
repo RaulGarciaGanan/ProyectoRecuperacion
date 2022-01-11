@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.proyectorecu.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_pelicula"
+            app:destination="@id/pelicula" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.proyectorecu.passwordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pelicula"
+        android:name="com.example.proyectorecu.pelicula"
+        android:label="fragment_pelicula"
+        tools:layout="@layout/fragment_pelicula" >
+        <action
+            android:id="@+id/action_pelicula_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_pelicula_to_edit_pelicula"
+            app:destination="@id/edit_pelicula" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_pelicula"
+        android:name="com.example.proyectorecu.edit_pelicula"
+        android:label="fragment_edit_pelicula"
+        tools:layout="@layout/fragment_edit_pelicula" >
+        <action
+            android:id="@+id/action_edit_pelicula_to_pelicula"
+            app:destination="@id/pelicula" />
+    </fragment>
+</navigation>

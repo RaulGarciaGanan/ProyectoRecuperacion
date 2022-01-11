@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edit_pelicula" >
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Id" />
+
+    <EditText
+        android:id="@+id/et_nombre_Pelicula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Añadir Titulo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_nombre_director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Añadir director"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar" />
+
+    <Button
+        android:id="@+id/bModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar" />
+
+    <Button
+        android:id="@+id/bBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FF9800"
+    android:orientation="vertical"
+    android:layout_margin="3sp">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_margin="8dp" />
+
+</LinearLayout>
